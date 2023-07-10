@@ -5,8 +5,11 @@ import sys
 import logging
 
 import click
+try:
+    from enex2md.convert import Converter
+except:
+    from convert import Converter
 
-from enex2md.convert import Converter
 # from enex2md import __version__
 
 _log = logging.getLogger(__name__)
